@@ -1,6 +1,12 @@
 :root{
-    --font-color: rgb(59, 59, 59);
-    --font-size: 1rem;
-    --mobile-padding: 1.6rem;
-    --mobile-margin: 1.6rem;
+    --font-color: hsl(0, 0%, 59%);
+    --secondary-font-color: hsl(0, 0%, 17%);
+    --font-size: 18px;
+    --mobile-padding: 6vw;
+    --mobile-margin: 6vw;
+}
+
+@font-face{
+    font-family: Rubik;
+    src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }

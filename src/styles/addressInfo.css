@@ -1,13 +1,15 @@
-.address-info{
-    margin: var(--mobile-margin);
+.address-info{ 
+    width: 88vw;
     text-align: center;
     box-shadow: 0 0 1px 0.1px black;
     padding: var(--mobile-padding);
     border-radius: 1rem;
-    position: relative;
-    top: -10rem;
+    position: absolute;
+    left: var(--mobile-margin);
+    top: 19vh;
     background: white;
 }
+
 
 .info-data{
     margin: var(--mobile-margin) 0;
@@ -22,12 +24,13 @@
 }
 
 .info-name{
-    font-size: .8rem;
-    color: rgb(121, 121, 121);
+    font-size: .7rem;
+    color: var(--secondary-font-color);
+    margin-bottom: 0.5rem;
 }
 
 .info-value{
-    font-size: 1.2rem;
+    font-size: var(--font-size);
     font-weight: bold;
-    color: black;
+    color: var(--primary-font-color);
 }
