@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 
-import AddressInfo from "./components/AddressInfo.js";
-import Header from "./components/Header.js";
-import MapSection from "./components/MapSection.js";
+import AddressInfo from "./components/addressInfo";
+import Header from "./components/header";
+import MapSection from "./components/mapSection";
 
 function App() {
   const [input, setInput] = useState("");
   const [ipData, setIpData] = useState({});
+
+  const getIpInfo = useCallback(async() => {
+    try {
+      const api_key = process.env.REACT_APP_API_KEY;
+			const response = await axios.get(`https://geo.ipify.org/api/v1?apiKey=${api_key}&domain=${input.trim()}`);
+      setIpData(response.data);
+      console.log(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }, [input])
 
 	const handleChange = e => {
 		setInput(e.target.value);
@@ -16,14 +27,15 @@ function App() {
 	const submitHandler = async e => {
 		e.preventDefault();
 		try {
-			const api_key = process.env.REACT_APP_API_KEY;
-			const response = await axios.get(`https://geo.ipify.org/api/v1?apiKey=${api_key}&domain=${input.trim()}`);
-      setIpData(response.data);
-      // console.log(response.data);
+      await getIpInfo();
 		} catch (error) {
 			console.log(error);
 		}
-	};
+  };
+  
+  useEffect(() => {
+    getIpInfo();
+  }, [getIpInfo])
 
 	return (
 		<div className="App">
