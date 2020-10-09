@@ -1,0 +1,40 @@
+.header{
+    width: 100vw;
+    height: 35vh;
+    padding: var(--mobile-padding);
+    background: url('../images/pattern-bg.png');
+    color: white;
+    text-align: center;
+}
+
+.header-title{
+    font-size: 25px;
+}
+
+.form-element{
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+.input-element{
+    width: 80%;
+    border-radius: 1rem 0 0 1rem;
+    border: 1px solid white;
+    outline: none;
+    padding-left: 20px;
+    border: none;
+}
+
+.submit-button{
+    width: 20%;
+    border-radius: 0 1rem 1rem 0;
+    border: none;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+}
+
+.input-element, .submit-button{
+    height: 50px;
+    font-size: var(--font-size);
+}
