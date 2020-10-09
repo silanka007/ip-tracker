@@ -1,5 +1,6 @@
 :root{
-    --font-color: rgb(20, 20, 20);
+    --font-color: rgb(59, 59, 59);
     --font-size: 1rem;
-    --mobile-padding: 1.5rem;
+    --mobile-padding: 1.6rem;
+    --mobile-margin: 1.6rem;
 }

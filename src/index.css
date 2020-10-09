@@ -13,8 +13,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: var(--font-size)
+  font-size: var(--font-size);
+  color: var(--font-color);
 }
 
 
 @import './styles/header.css';
+@import './styles/addressInfo.css';
