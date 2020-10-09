@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 
-import AddressInfo from "./components/addressInfo.js";
-import Header from "./components/header.js";
-import MapSection from "./components/mapSection.js";
+import AddressInfo from "./components/AddressInfo";
+import Header from "./components/Header";
+import MapSection from "./components/MapSection";
 
 function App() {
   const [input, setInput] = useState("");
