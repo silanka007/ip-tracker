@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import IconArrow from '../images/icon-arrow.svg';
 
 const Header = ({ handleChange, submitHandler }) => {
     return (
@@ -7,7 +8,9 @@ const Header = ({ handleChange, submitHandler }) => {
             <h1 className="header-title">IP Address Tracker</h1>
             <form method="POST" className="form-element" onSubmit={submitHandler}>
                 <input type="text" name="ipAddress" className="input-element" onChange={handleChange} required />
-                <input type="submit" value=">" id="submit" className="submit-button" onClick={submitHandler} />
+                <button type="submit" id="submit" className="submit-button" onClick={submitHandler}>
+                    <img src={IconArrow} alt=">" />
+                </button>
             </form>
         </header>
     )

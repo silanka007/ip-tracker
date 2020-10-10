@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 import { Map, Marker, Popup, TileLayer } from "react-leaflet";
 import CustomMarker from './customMarker';
 
 
 const MapSection = ({location: {lat, lng, city, region, country}}) => {
-	useEffect(() => {
-		console.log(CustomMarker());
-	});
 	return (
 		<Map center={[lat, lng]} zoom={13} className="map-section">
 			<TileLayer
