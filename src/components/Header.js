@@ -7,7 +7,7 @@ const Header = ({ handleChange, submitHandler }) => {
         <header className="header">
             <h1 className="header-title">IP Address Tracker</h1>
             <form method="POST" className="form-element" onSubmit={submitHandler}>
-                <input type="text" name="ipAddress" className="input-element" onChange={handleChange} required />
+                <input type="text" name="ipAddress" className="input-element" onChange={handleChange} placeholder="Search for any IP Address or domain" required />
                 <button type="submit" id="submit" className="submit-button" onClick={submitHandler}>
                     <img src={IconArrow} alt=">" />
                 </button>

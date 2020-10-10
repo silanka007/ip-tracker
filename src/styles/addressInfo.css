@@ -1,5 +1,5 @@
 .address-info{ 
-    width: 88vw;
+    width: 88%;
     height: auto;
     text-align: center;
     box-shadow: 0 0 1px 0.1px black;
@@ -34,4 +34,43 @@
     font-size: var(--font-size);
     font-weight: bold;
     color: var(--primary-font-color);
+}
+
+@media only screen and (min-width: 600px) {
+    .address-info{
+        top: 22vh;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .address-info{
+        display:flex;
+        top: 25vh;
+        padding: var(--desktop-padding);
+        justify-content: space-between;
+    }
+
+    .info-data{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 1rem;
+
+    }
+
+    .info-data:not(:first-child){
+        border-left: 1px solid var(--font-color);
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .address-info{
+        top: 28vh;
+        max-width: 70%;
+        left: 15%;
+    }
 }

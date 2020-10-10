@@ -17,9 +17,11 @@ body {
   color: var(--primary-font-color);
 }
 
-.app{
-  position: relative;
+.App{
+  /* position: relative; */
   font-family: Rubik;
+  /* width: 1440px; */
+  margin: auto;
 }
 
 @import './styles/header.css';
