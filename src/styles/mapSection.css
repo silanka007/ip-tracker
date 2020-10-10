@@ -1,4 +1,9 @@
 .map-section{
     height: 65vh;
-    background: green;
+    z-index: 1;
+}
+
+.leaflet-control-zoom{
+    position: absolute;
+    top: 15rem;
 }

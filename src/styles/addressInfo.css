@@ -1,13 +1,15 @@
 .address-info{ 
     width: 88vw;
+    height: auto;
     text-align: center;
     box-shadow: 0 0 1px 0.1px black;
     padding: var(--mobile-padding);
     border-radius: 1rem;
-    position: absolute;
+    position: fixed;
     left: var(--mobile-margin);
-    top: 19vh;
+    top: 20vh;
     background: white;
+    z-index: 2;
 }
 
 
