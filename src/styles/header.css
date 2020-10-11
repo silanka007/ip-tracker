@@ -1,6 +1,6 @@
 .header{
     width: 100vw;
-    height: 35vh;
+    height: 35%;
     padding: var(--mobile-padding);
     background: url('../images/pattern-bg.png');
     color: white;
