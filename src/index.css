@@ -15,6 +15,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: var(--font-size);
   color: var(--primary-font-color);
+  width: 100vw;
+  height: 100vh;
 }
 
 .App{
@@ -22,7 +24,8 @@ body {
   font-family: Rubik;
   /* width: 1440px; */
   margin: auto;
-  height: 100%;
+  height: 100vh;
+  min-height: 640px;
 
 }
 
