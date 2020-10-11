@@ -22,6 +22,7 @@ body {
   font-family: Rubik;
   /* width: 1440px; */
   margin: auto;
+  height: 100vh;
 }
 
 @import './styles/header.css';
